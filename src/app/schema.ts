@@ -67,4 +67,8 @@ type Recruiter {
   Email: String!
   Manges: [Jobs!]! @relationship(type: "MANAGES", direction: OUT)
 }
+
+type Query {
+  Users: [user!]!
+}
 `;
